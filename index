@@ -29,7 +29,6 @@
         --shadow-medium: 0 8px 20px rgba(201, 168, 160, 0.12);
         --shadow-heavy: 0 12px 30px rgba(201, 168, 160, 0.18);
       }
-
       body {
         font-family: "Poppins", sans-serif;
         background-color: var(--background-color);
@@ -38,7 +37,6 @@
         color: var(--text-color);
         line-height: 1.6;
       }
-
       h1 {
         text-align: center;
         color: var(--primary-color);
@@ -49,18 +47,15 @@
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
         letter-spacing: 1px;
       }
-
       .main-container {
         display: flex;
         gap: 30px;
         max-width: 1400px;
         margin: 0 auto;
       }
-
       .left-panel {
         width: 340px;
       }
-
       .panel {
         background-color: var(--card-background);
         border-radius: 16px;
@@ -70,15 +65,12 @@
         border: 1px solid var(--border-color);
         transition: all 0.3s ease;
       }
-
       .panel:hover {
         box-shadow: var(--shadow-medium);
       }
-
       .form-group {
         margin-bottom: 18px;
       }
-
       label {
         display: block;
         margin-bottom: 8px;
@@ -87,7 +79,6 @@
         font-size: 14px;
         letter-spacing: 0.5px;
       }
-
       input,
       select,
       button {
@@ -101,14 +92,12 @@
         transition: all 0.3s ease;
         box-sizing: border-box;
       }
-
       input:focus,
       select:focus {
         outline: none;
         border-color: var(--primary-color);
         box-shadow: 0 0 0 3px rgba(201, 168, 160, 0.2);
       }
-
       button {
         background-color: var(--primary-color);
         color: white;
@@ -126,31 +115,25 @@
         gap: 10px;
         letter-spacing: 0.5px;
       }
-
       button:hover {
         background-color: #b8968e;
         transform: translateY(-2px);
         box-shadow: var(--shadow-medium);
       }
-
       button:active {
         transform: translateY(0);
       }
-
       .secondary-btn {
         background-color: var(--secondary-color);
         color: var(--text-color);
       }
-
       .secondary-btn:hover {
         background-color: #e0c4c0;
       }
-
       button.active {
         background-color: var(--primary-color);
         color: white;
       }
-
       /* Guest Table Styling */
       .guest-table-container {
         overflow-x: auto;
@@ -159,13 +142,13 @@
         background-color: var(--card-background);
         margin-bottom: 25px;
         box-shadow: var(--shadow-light);
+        max-height: 400px;
+        overflow-y: auto;
       }
-
       .guest-table {
         width: 100%;
         border-collapse: collapse;
       }
-
       .guest-table th {
         background-color: var(--accent-color);
         padding: 15px 18px;
@@ -175,22 +158,21 @@
         border-bottom: 1px solid var(--border-color);
         font-size: 14px;
         letter-spacing: 0.5px;
+        position: sticky;
+        top: 0;
+        z-index: 10;
       }
-
       .guest-table td {
         padding: 15px 18px;
         border-bottom: 1px solid var(--border-color);
         font-size: 14px;
       }
-
       .guest-table tr:hover {
         background-color: var(--accent-color);
       }
-
       .guest-table tr:last-child td {
         border-bottom: none;
       }
-
       .status-badge {
         display: inline-block;
         padding: 5px 10px;
@@ -200,22 +182,18 @@
         text-align: center;
         letter-spacing: 0.5px;
       }
-
       .status-attending {
         background-color: var(--success-color);
         color: #2d5a2d;
       }
-
       .status-pending {
         background-color: var(--warning-color);
         color: #856404;
       }
-
       .status-declined {
         background-color: var(--error-color);
         color: #721c24;
       }
-
       .side-badge {
         display: inline-block;
         padding: 5px 10px;
@@ -224,34 +202,28 @@
         font-weight: 500;
         letter-spacing: 0.5px;
       }
-
       .side-bride {
         background-color: #f8c6d0;
         color: #7d3a46;
       }
-
       .side-groom {
         background-color: #a0c6f8;
         color: #2c4d7d;
       }
-
       .side-couple {
         background-color: var(--primary-color);
         color: #7d3a46;
       }
-
       .side-other {
         background-color: #f6e5d8;
         color: #7d5a42;
       }
-
       /* View Toggle */
       .view-toggle {
         display: flex;
         gap: 12px;
         margin-bottom: 20px;
       }
-
       /* Guest List Styling */
       .guest-list-container {
         margin-top: 18px;
@@ -261,7 +233,6 @@
         overflow: hidden;
         box-shadow: var(--shadow-light);
       }
-
       .guest-list-header {
         background-color: var(--accent-color);
         padding: 12px 15px;
@@ -271,7 +242,6 @@
         font-size: 14px;
         letter-spacing: 0.5px;
       }
-
       .guest-list {
         max-height: 220px;
         overflow-y: auto;
@@ -279,22 +249,18 @@
         scrollbar-width: thin;
         scrollbar-color: var(--primary-color) var(--accent-color);
       }
-
       .guest-list::-webkit-scrollbar {
         width: 8px;
       }
-
       .guest-list::-webkit-scrollbar-track {
         background: var(--accent-color);
         border-radius: 4px;
       }
-
       .guest-list::-webkit-scrollbar-thumb {
         background-color: var(--primary-color);
         border-radius: 4px;
         border: 1px solid var(--accent-color);
       }
-
       .guest-item {
         display: flex;
         align-items: center;
@@ -303,15 +269,12 @@
         border-bottom: 1px solid var(--border-color);
         transition: background-color 0.2s;
       }
-
       .guest-item:last-child {
         border-bottom: none;
       }
-
       .guest-item:hover {
         background-color: var(--accent-color);
       }
-
       .guest-name {
         flex: 1;
         white-space: nowrap;
@@ -319,36 +282,30 @@
         text-overflow: ellipsis;
         font-size: 13px;
       }
-
       .guest-info {
         display: flex;
         align-items: center;
         gap: 10px;
         margin-left: 10px;
       }
-
       .guest-side {
         font-size: 11px;
         padding: 3px 8px;
         border-radius: 12px;
         font-weight: 500;
       }
-
       .guest-side.bride {
         background-color: #f8c6d0;
         color: #7d3a46;
       }
-
       .guest-side.groom {
         background-color: #a0c6f8;
         color: #2c4d7d;
       }
-
       .guest-side.other {
         background-color: #f6e5d8;
         color: #7d5a42;
       }
-
       .edit-guest,
       .delete-guest {
         background: none;
@@ -365,25 +322,21 @@
         border-radius: 50%;
         transition: all 0.2s;
       }
-
       .edit-guest:hover,
       .delete-guest:hover {
         background-color: rgba(201, 168, 160, 0.2);
         color: var(--primary-color);
       }
-
       /* Edit Form */
       .edit-form {
         padding: 12px 15px;
         border-bottom: 1px solid var(--border-color);
         background-color: var(--accent-color);
       }
-
       .right-panel {
         flex: 1;
         padding-bottom: 25px;
       }
-
       .tables-container {
         display: flex;
         gap: 25px;
@@ -391,7 +344,6 @@
         justify-content: center;
         padding-bottom: 15px;
       }
-
       /* Floor Plan Styles */
       .floor-plan {
         width: 100%;
@@ -403,7 +355,6 @@
         overflow: hidden;
         box-shadow: var(--shadow-light);
       }
-
       .floor-plan-table {
         display: flex;
         flex-direction: column;
@@ -420,19 +371,16 @@
         user-select: none;
         box-shadow: var(--shadow-light);
       }
-
       .floor-plan-table:hover {
         transform: scale(1.05);
         box-shadow: var(--shadow-medium);
       }
-
       .floor-plan-table.dragging {
         opacity: 0.7;
         transform: scale(1.1);
         z-index: 1000;
         box-shadow: var(--shadow-heavy);
       }
-
       .floor-plan-table-name {
         font-family: "Playfair Display", serif;
         font-size: 12px;
@@ -441,7 +389,6 @@
         margin-bottom: 5px;
         font-weight: 600;
       }
-
       .floor-plan-table-count {
         font-size: 10px;
         background-color: var(--primary-color);
@@ -450,7 +397,6 @@
         padding: 2px 6px;
         font-weight: 600;
       }
-
       /* Table Card Styles */
       .table-card {
         position: relative;
@@ -469,34 +415,27 @@
         animation: fadeIn 0.5s ease;
         overflow: hidden;
       }
-
       /* Capacity Indicators */
       .table-card.low-capacity {
         border-color: #4caf50;
       }
-
       .table-card.medium-capacity {
         border-color: #ffeb3b;
       }
-
       .table-card.high-capacity {
         border-color: #ff9800;
       }
-
       .table-card.full-capacity {
         border-color: #f44336;
         border-style: solid;
       }
-
       .table-card.full-capacity .guest-count {
         background-color: #f44336;
       }
-
       .table-card:hover {
         transform: scale(1.05);
         box-shadow: var(--shadow-medium);
       }
-
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -507,7 +446,6 @@
           transform: scale(1);
         }
       }
-
       .table-header {
         display: flex;
         align-items: center;
@@ -515,7 +453,6 @@
         width: 100%;
         margin-bottom: 8px;
       }
-
       .table-card h3 {
         margin: 0;
         font-family: "Playfair Display", serif;
@@ -528,7 +465,6 @@
         text-overflow: ellipsis;
         font-weight: 600;
       }
-
       .guest-count {
         font-size: 12px;
         background-color: var(--primary-color);
@@ -542,61 +478,56 @@
         font-weight: 600;
         flex-shrink: 0;
       }
-
       .delete-table {
         position: absolute;
-        top: 8px;
-        right: 8px;
-        background: rgba(255, 255, 255, 0.9);
-        border: none;
+        top: 5px;
+        right: 5px;
+        background: white;
+        border: 2px solid var(--primary-color);
         color: var(--primary-color);
         cursor: pointer;
         font-size: 14px;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.2s;
-        z-index: 10;
-        box-shadow: var(--shadow-light);
+        z-index: 20;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
-
       .delete-table:hover {
-        background: #fff;
-        color: var(--primary-color);
+        background: var(--primary-color);
+        color: white;
         transform: scale(1.1);
-        box-shadow: var(--shadow-medium);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
       }
-
       .floor-plan-delete-table {
         position: absolute;
         top: -10px;
         right: -10px;
-        background: #fff;
-        border: none;
+        background: white;
+        border: 2px solid var(--primary-color);
         color: var(--primary-color);
         cursor: pointer;
         font-size: 14px;
-        width: 26px;
-        height: 26px;
+        width: 24px;
+        height: 24px;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         transition: all 0.2s;
-        z-index: 10;
-        box-shadow: var(--shadow-light);
+        z-index: 20;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
       }
-
       .floor-plan-delete-table:hover {
-        background: #fff;
-        color: var(--primary-color);
+        background: var(--primary-color);
+        color: white;
         transform: scale(1.1);
-        box-shadow: var(--shadow-medium);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
       }
-
       .table-card ul {
         list-style: none;
         padding: 0;
@@ -610,7 +541,6 @@
         overflow: hidden;
         position: relative;
       }
-
       .table-card ul li {
         font-size: 10px;
         margin: 3px;
@@ -631,28 +561,23 @@
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-
       .table-card ul li.bride {
         background-color: #f8c6d0;
         color: #7d3a46;
       }
-
       .table-card ul li.groom {
         background-color: #a0c6f8;
         color: #2c4d7d;
       }
-
       .table-card ul li.other {
         background-color: #f6e5d8;
         color: #7d5a42;
       }
-
       .table-card ul li:hover {
         transform: scale(1.1);
         box-shadow: var(--shadow-medium);
         z-index: 5;
       }
-
       .table-card ul li:hover::after {
         content: attr(data-fullname) " | " attr(data-side) " | RSVP: "
           attr(data-rsvp);
@@ -674,7 +599,6 @@
         overflow: hidden;
         text-overflow: ellipsis;
       }
-
       .empty-state {
         display: flex;
         flex-direction: column;
@@ -684,19 +608,16 @@
         color: var(--primary-color);
         text-align: center;
       }
-
       .empty-state i {
         font-size: 48px;
         margin-bottom: 15px;
         opacity: 0.7;
       }
-
       .empty-state p {
         font-size: 16px;
         max-width: 200px;
         line-height: 1.4;
       }
-
       .fab {
         position: fixed;
         bottom: 30px;
@@ -715,13 +636,11 @@
         transition: all 0.3s ease;
         z-index: 1000;
       }
-
       .fab:hover {
         background-color: #b8968e;
         transform: scale(1.1) rotate(90deg);
         box-shadow: var(--shadow-heavy);
       }
-
       .fab-menu {
         position: fixed;
         bottom: 100px;
@@ -731,12 +650,10 @@
         gap: 15px;
         z-index: 1000;
       }
-
       .fab-menu.show {
         display: flex;
         animation: slideUp 0.3s ease;
       }
-
       @keyframes slideUp {
         from {
           opacity: 0;
@@ -747,7 +664,6 @@
           transform: translateY(0);
         }
       }
-
       .fab-menu button {
         background-color: white;
         border: 1px solid var(--border-color);
@@ -763,18 +679,15 @@
         gap: 12px;
         transition: all 0.2s ease;
       }
-
       .fab-menu button:hover {
         background-color: var(--accent-color);
         transform: translateX(-5px);
         box-shadow: var(--shadow-medium);
       }
-
       .fab-menu button i {
         color: var(--primary-color);
         font-size: 16px;
       }
-
       .notification {
         position: fixed;
         top: 20px;
@@ -792,32 +705,25 @@
         transform: translateX(120%);
         transition: transform 0.3s ease;
       }
-
       .notification.show {
         transform: translateX(0);
       }
-
       .notification i {
         color: var(--primary-color);
         font-size: 18px;
       }
-
       .notification.success {
         border-left-color: var(--success-color);
       }
-
       .notification.success i {
         color: var(--success-color);
       }
-
       .notification.error {
         border-left-color: var(--error-color);
       }
-
       .notification.error i {
         color: var(--error-color);
       }
-
       /* Trash Area Styling */
       .trash-area {
         position: fixed;
@@ -835,18 +741,15 @@
         z-index: 999;
         opacity: 0.8;
       }
-
       .trash-area.active {
         background-color: #e67c83;
         transform: scale(1.1);
         opacity: 1;
       }
-
       .trash-area i {
         font-size: 28px;
         color: #721c24;
       }
-
       .trash-area span {
         position: absolute;
         bottom: -25px;
@@ -859,11 +762,9 @@
         opacity: 0;
         transition: opacity 0.3s;
       }
-
       .trash-area:hover span {
         opacity: 1;
       }
-
       /* Floor Plan Instructions */
       .floor-plan-instructions {
         position: absolute;
@@ -880,75 +781,81 @@
         align-items: center;
         gap: 8px;
       }
-
+      /* Action buttons styling */
+      .action-buttons {
+        display: flex;
+        gap: 5px;
+      }
+      .action-buttons button {
+        width: auto;
+        margin: 0;
+        padding: 6px 8px;
+        font-size: 12px;
+      }
       @media (max-width: 900px) {
         .main-container {
           flex-direction: column;
           gap: 25px;
         }
-
         .left-panel {
           width: 100%;
         }
       }
-
       @media (max-width: 600px) {
         h1 {
           font-size: 24px;
         }
-
         .table-card {
           width: 150px;
           height: 150px;
           border-width: 2px;
           padding: 12px 8px;
         }
-
         .table-card ul li {
           font-size: 9px;
           width: 28px;
           height: 28px;
         }
-
         input,
         select,
         button {
           font-size: 14px;
           padding: 10px;
         }
-
         .fab-menu button {
           width: 150px;
           font-size: 13px;
         }
-
         .trash-area {
           width: 60px;
           height: 60px;
           bottom: 15px;
           left: 15px;
         }
-
         .trash-area i {
           font-size: 24px;
         }
-
         .floor-plan {
           height: 400px;
         }
-
         .guest-table-container {
           font-size: 12px;
         }
-
         .guest-table th,
         .guest-table td {
           padding: 10px 12px;
         }
-
         .floor-plan-instructions {
           font-size: 11px;
           padding: 8px 10px;
+        }
+        .action-buttons {
+          flex-direction: column;
+          gap: 2px;
+        }
+        .action-buttons button {
+          padding: 4px 6px;
+          font-size: 10px;
         }
       }
     </style>
@@ -1006,7 +913,6 @@
           <button id="addGuest">
             <i class="fas fa-user-plus"></i> Add Guest
           </button>
-
           <h2
             style="
               margin-top: 30px;
@@ -1049,7 +955,6 @@
               </div>
             </div>
           </div>
-
           <h2
             style="
               margin-top: 30px;
@@ -1071,7 +976,9 @@
           <button id="addTable">
             <i class="fas fa-plus-circle"></i> Add Table
           </button>
-          <div style="display: flex; gap: 10px; margin-top: 18px">
+          <div
+            style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px"
+          >
             <button id="exportPDF" class="secondary-btn">
               <i class="fas fa-file-pdf"></i> Export PDF
             </button>
@@ -1120,7 +1027,6 @@
             </tbody>
           </table>
         </div>
-
         <!-- Seating Arrangement Section -->
         <div class="panel">
           <h2
@@ -1133,7 +1039,6 @@
           >
             Seating Arrangement
           </h2>
-
           <!-- View Toggle -->
           <div class="view-toggle">
             <button id="tableView" class="secondary-btn active">
@@ -1143,7 +1048,6 @@
               <i class="fas fa-map"></i> Floor Plan
             </button>
           </div>
-
           <div class="tables-container" id="tablesContainer">
             <div id="emptyTables" class="empty-state" style="width: 100%">
               <i class="fas fa-chair"></i>
@@ -1187,7 +1091,6 @@
         tables: [],
         tablePositions: {},
       };
-
       // Load data from localStorage if available
       function loadData() {
         try {
@@ -1203,7 +1106,6 @@
           console.error("Error loading data from localStorage:", error);
         }
       }
-
       // Save data to localStorage
       function saveData() {
         try {
@@ -1220,28 +1122,76 @@
           );
         }
       }
+      // Function to renumber tables after deletion
+      function renumberTables() {
+        // Find all auto-named tables (pattern: "Table X")
+        const autoNamedTables = weddingData.tables.filter((table) =>
+          /^Table \d+$/.test(table.name)
+        );
 
+        // Sort by the number in the name
+        autoNamedTables.sort((a, b) => {
+          const numA = parseInt(a.name.split(" ")[1]);
+          const numB = parseInt(b.name.split(" ")[1]);
+          return numA - numB;
+        });
+
+        // Renumber starting from 1
+        autoNamedTables.forEach((table, index) => {
+          const oldName = table.name;
+          const newName = `Table ${index + 1}`;
+
+          // Update the table name in the data model
+          table.name = newName;
+
+          // Update table positions if they exist
+          if (weddingData.tablePositions[oldName]) {
+            weddingData.tablePositions[newName] =
+              weddingData.tablePositions[oldName];
+            delete weddingData.tablePositions[oldName];
+          }
+
+          // Update DOM in table view if it exists
+          const tableElement = tables.find(
+            (t) =>
+              t.querySelector("h3") &&
+              t.querySelector("h3").textContent === oldName
+          );
+          if (tableElement) {
+            tableElement.querySelector("h3").textContent = newName;
+          }
+
+          // Update DOM in floor plan view if it exists
+          const floorPlanTable = document.querySelector(
+            `.floor-plan-table[data-table-name="${oldName}"]`
+          );
+          if (floorPlanTable) {
+            floorPlanTable.dataset.tableName = newName;
+            floorPlanTable.querySelector(".floor-plan-table-name").textContent =
+              newName;
+          }
+        });
+
+        // Save the updated data
+        saveData();
+      }
       // Render loaded data
       function renderData() {
         console.log("Rendering data...");
-
         // Clear existing data
         guestList.innerHTML = "";
         guestTableBody.innerHTML = "";
         tablesContainer.innerHTML = "";
         tables = [];
-
         // Add empty states
         guestList.appendChild(emptyGuestList);
         guestTableBody.appendChild(emptyGuestRow);
         tablesContainer.appendChild(emptyTables);
-
         // Render guests
         if (weddingData.guests && weddingData.guests.length > 0) {
           console.log("Rendering guests:", weddingData.guests.length);
           emptyGuestList.style.display = "none";
           emptyGuestRow.style.display = "none";
-
           weddingData.guests.forEach((guest) => {
             // Add to guest list
             const guestItem = document.createElement("div");
@@ -1264,7 +1214,6 @@
                 </button>
               </div>
             `;
-
             guestItem.addEventListener("dragstart", (e) => {
               e.dataTransfer.setData(
                 "text/plain",
@@ -1276,13 +1225,10 @@
               );
               trashArea.classList.add("active");
             });
-
             guestItem.addEventListener("dragend", () => {
               trashArea.classList.remove("active");
             });
-
             guestList.appendChild(guestItem);
-
             // Add to guest table
             addGuestToTable(
               guest.name,
@@ -1293,19 +1239,15 @@
             );
           });
         }
-
         // Render tables
         if (weddingData.tables && weddingData.tables.length > 0) {
           console.log("Rendering tables:", weddingData.tables.length);
           emptyTables.style.display = "none";
-
           weddingData.tables.forEach((table, index) => {
             createTable(index + 1, table.name, false);
-
             // Add guests to table
             const tableElement = tables[tables.length - 1];
             const ul = tableElement.querySelector("ul");
-
             if (table.guests && table.guests.length > 0) {
               table.guests.forEach((guestName) => {
                 // Find guest data
@@ -1333,7 +1275,6 @@
                       ? "groom"
                       : "other"
                   );
-
                   li.addEventListener("dragstart", (ev) => {
                     ev.dataTransfer.setData(
                       "text/plain",
@@ -1341,24 +1282,19 @@
                     );
                     trashArea.classList.add("active");
                   });
-
                   li.addEventListener("dragend", () => {
                     trashArea.classList.remove("active");
                   });
-
                   ul.appendChild(li);
                 }
               });
             }
-
             updateGuestCount();
           });
         }
-
         // Update table positions
         tablePositions = weddingData.tablePositions || {};
       }
-
       const tablesContainer = document.getElementById("tablesContainer");
       const addTableBtn = document.getElementById("addTable");
       const addGuestBtn = document.getElementById("addGuest");
@@ -1385,14 +1321,11 @@
       const searchGuestsInput = document.getElementById("searchGuests");
       const tableViewBtn = document.getElementById("tableView");
       const floorPlanViewBtn = document.getElementById("floorPlanView");
-
       let tables = [];
       let currentView = "table";
       let tablePositions = {};
-
       // Load data when page loads
       document.addEventListener("DOMContentLoaded", loadData);
-
       // Show notification
       function showNotification(message, type = "success") {
         notificationText.textContent = message;
@@ -1409,14 +1342,12 @@
           notification.classList.remove("show");
         }, 3000);
       }
-
       // Toggle FAB menu
       fab.addEventListener("click", () => {
         fabMenu.classList.toggle("show");
         fab.querySelector("i").classList.toggle("fa-plus");
         fab.querySelector("i").classList.toggle("fa-times");
       });
-
       // Check if guest exists anywhere
       function guestExistsAnywhere(name) {
         const inPool = [...guestList.querySelectorAll(".guest-item")].some(
@@ -1434,7 +1365,6 @@
         );
         return inPool || inTable || inTables;
       }
-
       // Add guest function
       function addGuest() {
         const name = guestNameInput.value.trim();
@@ -1446,12 +1376,10 @@
           showNotification("Guest already exists!", "error");
           return;
         }
-
         const side = guestSideInput.value;
         const rsvp = guestRSVPInput.value;
         const invitationSent = invitationSentInput.value;
         const saveTheDate = saveTheDateInput.value;
-
         // Add to data model
         const guest = {
           name,
@@ -1462,10 +1390,8 @@
         };
         weddingData.guests.push(guest);
         saveData();
-
         // Add to table view
         addGuestToTable(name, side, rsvp, invitationSent, saveTheDate);
-
         // Add to guest list for seating plan
         const guestItem = document.createElement("div");
         guestItem.className = "guest-item";
@@ -1485,7 +1411,6 @@
             </button>
           </div>
         `;
-
         guestItem.addEventListener("dragstart", (e) => {
           e.dataTransfer.setData(
             "text/plain",
@@ -1493,31 +1418,24 @@
           );
           trashArea.classList.add("active");
         });
-
         guestItem.addEventListener("dragend", () => {
           trashArea.classList.remove("active");
         });
-
         // Remove empty state if visible
         if (emptyGuestList) {
           emptyGuestList.style.display = "none";
         }
-
         guestList.appendChild(guestItem);
-
         // Clear form
         guestNameInput.value = "";
-
         showNotification(`Guest "${name}" added successfully`);
       }
-
       // Add guest to table view
       function addGuestToTable(name, side, rsvp, invitationSent, saveTheDate) {
         // Remove empty state if visible
         if (emptyGuestRow) {
           emptyGuestRow.style.display = "none";
         }
-
         const row = document.createElement("tr");
         row.className = "guest-row";
         row.dataset.name = name;
@@ -1525,10 +1443,8 @@
         row.dataset.rsvp = rsvp;
         row.dataset.invitation = invitationSent;
         row.dataset.savethedate = saveTheDate;
-
         const sideClass = side.toLowerCase();
         const rsvpClass = rsvp.toLowerCase();
-
         row.innerHTML = `
           <td>${name}</td>
           <td><span class="side-badge side-${sideClass}">${side}</span></td>
@@ -1536,18 +1452,18 @@
           <td>${invitationSent}</td>
           <td>${saveTheDate}</td>
           <td>
-            <button class="edit-guest" data-name="${name}" style="margin-right: 5px;">
-              <i class="fas fa-edit"></i>
-            </button>
-            <button class="delete-guest" data-name="${name}">
-              <i class="fas fa-trash"></i>
-            </button>
+            <div class="action-buttons">
+              <button class="edit-guest" data-name="${name}">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="delete-guest" data-name="${name}">
+                <i class="fas fa-trash"></i>
+              </button>
+            </div>
           </td>
         `;
-
         guestTableBody.appendChild(row);
       }
-
       // Edit guest function
       function editGuest(guestElement, isTable = false) {
         const name = guestElement.dataset.name;
@@ -1555,7 +1471,6 @@
         const rsvp = guestElement.dataset.rsvp;
         const invitation = guestElement.dataset.invitation || "No";
         const saveTheDate = guestElement.dataset.savethedate || "No";
-
         // Create edit form
         const editForm = document.createElement("div");
         editForm.className = "edit-form";
@@ -1622,13 +1537,11 @@
             <button id="cancelGuestEdit" class="secondary-btn"><i class="fas fa-times"></i> Cancel</button>
           </div>
         `;
-
         // Replace the guest element with the form
         if (isTable) {
           const newRow = document.createElement("tr");
           newRow.appendChild(editForm);
           guestElement.parentNode.replaceChild(newRow, guestElement);
-
           // Handle save
           document
             .getElementById("saveGuestEdit")
@@ -1642,12 +1555,10 @@
                 document.getElementById("editInvitationSent").value;
               const newSaveTheDate =
                 document.getElementById("editSaveTheDate").value;
-
               if (!newName) {
                 showNotification("Guest name cannot be empty", "error");
                 return;
               }
-
               // Check if new name already exists (if name changed)
               if (newName !== name && guestExistsAnywhere(newName)) {
                 showNotification(
@@ -1656,7 +1567,6 @@
                 );
                 return;
               }
-
               // Update data model
               const guestIndex = weddingData.guests.findIndex(
                 (g) => g.name === name
@@ -1671,17 +1581,14 @@
                 };
                 saveData();
               }
-
               // Update the guest element with new values
               guestElement.dataset.name = newName;
               guestElement.dataset.side = newSide;
               guestElement.dataset.rsvp = newRSVP;
               guestElement.dataset.invitation = newInvitation;
               guestElement.dataset.savethedate = newSaveTheDate;
-
               const sideClass = newSide.toLowerCase();
               const rsvpClass = newRSVP.toLowerCase();
-
               guestElement.innerHTML = `
               <td>${newName}</td>
               <td><span class="side-badge side-${sideClass}">${newSide}</span></td>
@@ -1689,18 +1596,18 @@
               <td>${newInvitation}</td>
               <td>${newSaveTheDate}</td>
               <td>
-                <button class="edit-guest" data-name="${newName}" style="margin-right: 5px;">
-                  <i class="fas fa-edit"></i>
-                </button>
-                <button class="delete-guest" data-name="${newName}">
-                  <i class="fas fa-trash"></i>
-                </button>
+                <div class="action-buttons">
+                  <button class="edit-guest" data-name="${newName}">
+                    <i class="fas fa-edit"></i>
+                  </button>
+                  <button class="delete-guest" data-name="${newName}">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </div>
               </td>
             `;
-
               // Replace form with updated guest element
               newRow.parentNode.replaceChild(guestElement, newRow);
-
               // Update guest in the guest list if it exists
               const guestListItem = guestList.querySelector(
                 `.guest-item[data-name="${name}"]`
@@ -1721,10 +1628,8 @@
                 guestListItem.querySelector(".delete-guest").dataset.name =
                   newName;
               }
-
               showNotification(`Guest "${newName}" updated successfully`);
             });
-
           // Handle cancel
           document
             .getElementById("cancelGuestEdit")
@@ -1733,7 +1638,6 @@
             });
         } else {
           guestElement.parentNode.replaceChild(editForm, guestElement);
-
           // Handle save
           document
             .getElementById("saveGuestEdit")
@@ -1747,12 +1651,10 @@
                 document.getElementById("editInvitationSent").value;
               const newSaveTheDate =
                 document.getElementById("editSaveTheDate").value;
-
               if (!newName) {
                 showNotification("Guest name cannot be empty", "error");
                 return;
               }
-
               // Check if new name already exists (if name changed)
               if (newName !== name && guestExistsAnywhere(newName)) {
                 showNotification(
@@ -1761,7 +1663,6 @@
                 );
                 return;
               }
-
               // Update data model
               const guestIndex = weddingData.guests.findIndex(
                 (g) => g.name === name
@@ -1776,7 +1677,6 @@
                 };
                 saveData();
               }
-
               // Update the guest element with new values
               guestElement.dataset.name = newName;
               guestElement.dataset.side = newSide;
@@ -1786,15 +1686,12 @@
               guestElement.querySelector(
                 ".guest-side"
               ).className = `guest-side ${newSide.toLowerCase()}`;
-
               // Update edit button data attribute
               guestElement.querySelector(".edit-guest").dataset.name = newName;
               guestElement.querySelector(".delete-guest").dataset.name =
                 newName;
-
               // Replace form with updated guest element
               editForm.parentNode.replaceChild(guestElement, editForm);
-
               // Update guest in the table if it exists
               const guestTableRow = guestTableBody.querySelector(
                 `.guest-row[data-name="${name}"]`
@@ -1805,10 +1702,8 @@
                 guestTableRow.dataset.rsvp = newRSVP;
                 guestTableRow.dataset.invitation = newInvitation;
                 guestTableRow.dataset.savethedate = newSaveTheDate;
-
                 const sideClass = newSide.toLowerCase();
                 const rsvpClass = newRSVP.toLowerCase();
-
                 guestTableRow.innerHTML = `
                 <td>${newName}</td>
                 <td><span class="side-badge side-${sideClass}">${newSide}</span></td>
@@ -1816,19 +1711,19 @@
                 <td>${newInvitation}</td>
                 <td>${newSaveTheDate}</td>
                 <td>
-                  <button class="edit-guest" data-name="${newName}" style="margin-right: 5px;">
-                    <i class="fas fa-edit"></i>
-                  </button>
-                  <button class="delete-guest" data-name="${newName}">
-                    <i class="fas fa-trash"></i>
-                  </button>
+                  <div class="action-buttons">
+                    <button class="edit-guest" data-name="${newName}">
+                      <i class="fas fa-edit"></i>
+                    </button>
+                    <button class="delete-guest" data-name="${newName}">
+                      <i class="fas fa-trash"></i>
+                    </button>
+                  </div>
                 </td>
               `;
               }
-
               showNotification(`Guest "${newName}" updated successfully`);
             });
-
           // Handle cancel
           document
             .getElementById("cancelGuestEdit")
@@ -1837,26 +1732,208 @@
             });
         }
       }
+      // Function to rebuild tables container from data model
+      function rebuildTablesContainer() {
+        // Clear the tables container
+        tablesContainer.innerHTML = "";
+        tables = [];
 
+        // If no tables, show empty state
+        if (weddingData.tables.length === 0) {
+          tablesContainer.appendChild(emptyTables);
+          emptyTables.style.display = "flex";
+          return;
+        }
+
+        // Rebuild each table
+        weddingData.tables.forEach((tableData, index) => {
+          // Create a new table element for table view
+          const table = document.createElement("div");
+          table.className = "table-card";
+          table.dataset.tableNumber = index + 1;
+
+          const header = document.createElement("div");
+          header.className = "table-header";
+
+          const title = document.createElement("h3");
+          title.textContent = tableData.name;
+
+          const count = document.createElement("div");
+          count.className = "guest-count";
+          count.textContent = tableData.guests ? tableData.guests.length : 0;
+
+          header.appendChild(title);
+          header.appendChild(count);
+
+          const deleteBtn = document.createElement("button");
+          deleteBtn.className = "delete-table";
+          deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
+          deleteBtn.addEventListener("click", () => {
+            if (
+              confirm(`Are you sure you want to delete ${title.textContent}?`)
+            ) {
+              // Remove from data model
+              const tableIndex = weddingData.tables.findIndex(
+                (t) => t.name === title.textContent
+              );
+              if (tableIndex !== -1) {
+                weddingData.tables.splice(tableIndex, 1);
+                delete weddingData.tablePositions[title.textContent];
+                saveData();
+
+                // Renumber tables after deletion
+                renumberTables();
+              }
+              table.remove();
+              tables = tables.filter((t) => t !== table);
+              updateGuestCount();
+              showNotification(`Table "${title.textContent}" deleted`);
+              // Show empty state if no tables
+              if (tables.length === 0) {
+                tablesContainer.appendChild(emptyTables);
+                emptyTables.style.display = "flex";
+              }
+            }
+          });
+
+          table.appendChild(header);
+          table.appendChild(deleteBtn);
+
+          const ul = document.createElement("ul");
+          table.appendChild(ul);
+
+          // Add guests to the table
+          if (tableData.guests && tableData.guests.length > 0) {
+            tableData.guests.forEach((guestName) => {
+              // Find guest data
+              const guestData = weddingData.guests.find(
+                (g) => g.name === guestName
+              );
+              if (guestData) {
+                // Create guest element
+                const li = document.createElement("li");
+                const displayName =
+                  guestData.name.length > 6
+                    ? guestData.name.substring(0, 5) + "..."
+                    : guestData.name;
+                li.textContent = displayName;
+                li.draggable = true;
+                li.dataset.name = guestData.name;
+                li.dataset.fullname = guestData.name;
+                li.dataset.side = guestData.side;
+                li.dataset.rsvp = guestData.rsvp;
+                li.classList.add(
+                  guestData.side === "Bride"
+                    ? "bride"
+                    : guestData.side === "Groom"
+                    ? "groom"
+                    : "other"
+                );
+                li.addEventListener("dragstart", (ev) => {
+                  ev.dataTransfer.setData(
+                    "text/plain",
+                    JSON.stringify(guestData)
+                  );
+                  trashArea.classList.add("active");
+                });
+                li.addEventListener("dragend", () => {
+                  trashArea.classList.remove("active");
+                });
+                ul.appendChild(li);
+              }
+            });
+          }
+
+          // Add drop event listener
+          table.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            trashArea.classList.remove("active");
+          });
+
+          table.addEventListener("drop", (e) => {
+            e.preventDefault();
+            const data = JSON.parse(e.dataTransfer.getData("text/plain"));
+            // Check if table is full
+            const currentGuests = ul.querySelectorAll("li").length;
+            if (currentGuests >= 12) {
+              showNotification(
+                "Table capacity reached (12 guests max)",
+                "error"
+              );
+              return;
+            }
+            // Remove from guest list or other tables
+            const sourceElements = [
+              ...document.querySelectorAll(".guest-item, .table-card ul li"),
+            ];
+            sourceElements.forEach((el) => {
+              if (el.dataset.name === data.name) {
+                el.remove();
+              }
+            });
+            // Create guest element
+            const li = document.createElement("li");
+            const displayName =
+              data.name.length > 6
+                ? data.name.substring(0, 5) + "..."
+                : data.name;
+            li.textContent = displayName;
+            li.draggable = true;
+            li.dataset.name = data.name;
+            li.dataset.fullname = data.name;
+            li.dataset.side = data.side;
+            li.dataset.rsvp = data.rsvp;
+            li.classList.add(
+              data.side === "Bride"
+                ? "bride"
+                : data.side === "Groom"
+                ? "groom"
+                : "other"
+            );
+            li.addEventListener("dragstart", (ev) => {
+              ev.dataTransfer.setData("text/plain", JSON.stringify(data));
+              trashArea.classList.add("active");
+            });
+            li.addEventListener("dragend", () => {
+              trashArea.classList.remove("active");
+            });
+            ul.appendChild(li);
+            // Update data model
+            const tableName = title.textContent;
+            const tableIndex = weddingData.tables.findIndex(
+              (t) => t.name === tableName
+            );
+            if (tableIndex !== -1) {
+              if (!weddingData.tables[tableIndex].guests) {
+                weddingData.tables[tableIndex].guests = [];
+              }
+              weddingData.tables[tableIndex].guests.push(data.name);
+              saveData();
+            }
+            updateGuestCount();
+            showNotification(`${data.name} seated at ${title.textContent}`);
+          });
+
+          tablesContainer.appendChild(table);
+          tables.push(table);
+        });
+
+        updateGuestCount();
+      }
       // Create table function
       function createTable(num, name = "", saveToData = true) {
         const table = document.createElement("div");
         table.className = "table-card";
         table.dataset.tableNumber = num;
-
         const header = document.createElement("div");
         header.className = "table-header";
-
         const title = document.createElement("h3");
         title.textContent = name || "Table " + num;
-
         const count = document.createElement("div");
         count.className = "guest-count";
         count.textContent = "0";
-
         header.appendChild(title);
         header.appendChild(count);
-
         const deleteBtn = document.createElement("button");
         deleteBtn.className = "delete-table";
         deleteBtn.innerHTML = '<i class="fas fa-times"></i>';
@@ -1872,42 +1949,38 @@
               weddingData.tables.splice(tableIndex, 1);
               delete weddingData.tablePositions[title.textContent];
               saveData();
-            }
 
+              // Renumber tables after deletion
+              renumberTables();
+            }
             table.remove();
             tables = tables.filter((t) => t !== table);
             updateGuestCount();
             showNotification(`Table "${title.textContent}" deleted`);
-
             // Show empty state if no tables
             if (tables.length === 0) {
+              tablesContainer.appendChild(emptyTables);
               emptyTables.style.display = "flex";
             }
           }
         });
-
         table.appendChild(header);
         table.appendChild(deleteBtn);
-
         const ul = document.createElement("ul");
         table.appendChild(ul);
-
         table.addEventListener("dragover", (e) => {
           e.preventDefault();
           trashArea.classList.remove("active");
         });
-
         table.addEventListener("drop", (e) => {
           e.preventDefault();
           const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-
           // Check if table is full
           const currentGuests = ul.querySelectorAll("li").length;
           if (currentGuests >= 12) {
             showNotification("Table capacity reached (12 guests max)", "error");
             return;
           }
-
           // Remove from guest list or other tables
           const sourceElements = [
             ...document.querySelectorAll(".guest-item, .table-card ul li"),
@@ -1917,7 +1990,6 @@
               el.remove();
             }
           });
-
           // Create guest element
           const li = document.createElement("li");
           // Truncate long names to fit in circle
@@ -1938,18 +2010,14 @@
               ? "groom"
               : "other"
           );
-
           li.addEventListener("dragstart", (ev) => {
             ev.dataTransfer.setData("text/plain", JSON.stringify(data));
             trashArea.classList.add("active");
           });
-
           li.addEventListener("dragend", () => {
             trashArea.classList.remove("active");
           });
-
           ul.appendChild(li);
-
           // Update data model
           const tableName = title.textContent;
           const tableIndex = weddingData.tables.findIndex(
@@ -1962,14 +2030,11 @@
             weddingData.tables[tableIndex].guests.push(data.name);
             saveData();
           }
-
           updateGuestCount();
           showNotification(`${data.name} seated at ${title.textContent}`);
         });
-
         tablesContainer.appendChild(table);
         tables.push(table);
-
         // Add to data model
         if (saveToData) {
           weddingData.tables.push({
@@ -1978,28 +2043,23 @@
           });
           saveData();
         }
-
         // Initialize position for floor plan
         tablePositions[title.textContent] = { top: 100, left: 50 };
         weddingData.tablePositions = tablePositions;
         saveData();
-
         // Hide empty state if visible
         emptyTables.style.display = "none";
         showNotification(`Table "${title.textContent}" created`);
       }
-
       // Update guest count for tables
       function updateGuestCount() {
         tables.forEach((table) => {
           const count = table.querySelector("ul").querySelectorAll("li").length;
           const countElement = table.querySelector(".guest-count");
           countElement.textContent = count;
-
           // Update capacity indicator
           const capacity = 12; // Maximum guests per table
           const percentage = (count / capacity) * 100;
-
           // Remove existing capacity classes
           table.classList.remove(
             "low-capacity",
@@ -2007,7 +2067,6 @@
             "high-capacity",
             "full-capacity"
           );
-
           // Add appropriate capacity class
           if (percentage === 0) {
             // No capacity class needed
@@ -2022,19 +2081,16 @@
           }
         });
       }
-
       // Event listeners
       addGuestBtn.addEventListener("click", addGuest);
       guestNameInput.addEventListener("keypress", (e) => {
         if (e.key === "Enter") addGuest();
       });
-
       addTableBtn.addEventListener("click", () => {
         const tableName = tableNameInput.value.trim();
         createTable(tables.length + 1, tableName);
         tableNameInput.value = "";
       });
-
       // Edit guest from table
       document.addEventListener("click", (e) => {
         if (e.target.closest(".guest-row .edit-guest")) {
@@ -2042,7 +2098,6 @@
           const guestRow = btn.closest(".guest-row");
           editGuest(guestRow, true);
         }
-
         // Edit guest from list
         if (e.target.closest(".guest-item .edit-guest")) {
           const btn = e.target.closest(".edit-guest");
@@ -2050,20 +2105,17 @@
           editGuest(guestItem, false);
         }
       });
-
       // Delete guest from table
       document.addEventListener("click", (e) => {
         if (e.target.closest(".guest-row .delete-guest")) {
           const btn = e.target.closest(".delete-guest");
           const name = btn.dataset.name;
           const row = btn.closest(".guest-row");
-
           if (confirm(`Remove ${name} from guest list?`)) {
             // Remove from data model
             weddingData.guests = weddingData.guests.filter(
               (g) => g.name !== name
             );
-
             // Remove from tables
             weddingData.tables.forEach((table) => {
               if (table.guests) {
@@ -2071,10 +2123,8 @@
               }
             });
             saveData();
-
             // Remove from table
             row.remove();
-
             // Remove from guest list if it exists
             const guestItem = guestList.querySelector(
               `.guest-item[data-name="${name}"]`
@@ -2082,16 +2132,13 @@
             if (guestItem) {
               guestItem.remove();
             }
-
             // Remove from any tables if seated
             const tableGuests = document.querySelectorAll(
               `.table-card ul li[data-name="${name}"]`
             );
             tableGuests.forEach((guest) => guest.remove());
-
             updateGuestCount();
             showNotification(`${name} removed from guest list`);
-
             // Show empty state if no guests
             if (
               guestTableBody.children.length === 1 &&
@@ -2099,7 +2146,6 @@
             ) {
               emptyGuestRow.style.display = "table-row";
             }
-
             if (
               guestList.children.length === 1 &&
               guestList.children[0] === emptyGuestList
@@ -2108,19 +2154,16 @@
             }
           }
         }
-
         // Delete guest from list
         if (e.target.closest(".guest-item .delete-guest")) {
           const btn = e.target.closest(".delete-guest");
           const name = btn.dataset.name;
           const item = btn.closest(".guest-item");
-
           if (confirm(`Remove ${name} from guest list?`)) {
             // Remove from data model
             weddingData.guests = weddingData.guests.filter(
               (g) => g.name !== name
             );
-
             // Remove from tables
             weddingData.tables.forEach((table) => {
               if (table.guests) {
@@ -2128,10 +2171,8 @@
               }
             });
             saveData();
-
             // Remove from list
             item.remove();
-
             // Remove from table if it exists
             const guestRow = guestTableBody.querySelector(
               `.guest-row[data-name="${name}"]`
@@ -2139,16 +2180,13 @@
             if (guestRow) {
               guestRow.remove();
             }
-
             // Remove from any tables if seated
             const tableGuests = document.querySelectorAll(
               `.table-card ul li[data-name="${name}"]`
             );
             tableGuests.forEach((guest) => guest.remove());
-
             updateGuestCount();
             showNotification(`${name} removed from guest list`);
-
             // Show empty state if no guests
             if (
               guestTableBody.children.length === 1 &&
@@ -2156,7 +2194,6 @@
             ) {
               emptyGuestRow.style.display = "table-row";
             }
-
             if (
               guestList.children.length === 1 &&
               guestList.children[0] === emptyGuestList
@@ -2166,16 +2203,13 @@
           }
         }
       });
-
       // Search guests
       searchGuestsInput.addEventListener("input", (e) => {
         const searchTerm = e.target.value.toLowerCase();
         const guestItems = guestList.querySelectorAll(".guest-item");
-
         guestItems.forEach((item) => {
           const name = item.dataset.name.toLowerCase();
           const side = item.dataset.side.toLowerCase();
-
           if (name.includes(searchTerm) || side.includes(searchTerm)) {
             item.style.display = "flex";
           } else {
@@ -2183,31 +2217,26 @@
           }
         });
       });
-
       // Export PDF
       exportPDFBtn.addEventListener("click", () => {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
         let y = 20;
-
         doc.setFont("Playfair Display", "normal");
         doc.setFontSize(22);
         doc.text("Wedding Seating Chart", 105, y, { align: "center" });
         y += 15;
-
         doc.setFont("Poppins", "normal");
         doc.setFontSize(12);
         doc.text(`Generated on: ${new Date().toLocaleDateString()}`, 105, y, {
           align: "center",
         });
         y += 15;
-
         // Add guest list
         doc.setFont("Playfair Display", "normal");
         doc.setFontSize(16);
         doc.text("Guest List", 20, y);
         y += 10;
-
         // Table headers
         doc.setFont("Poppins", "normal");
         doc.setFontSize(10);
@@ -2217,7 +2246,6 @@
         doc.text("Invitation", 140, y);
         doc.text("Save the Date", 170, y);
         y += 5;
-
         // Guest list rows
         const guestRows = guestTableBody.querySelectorAll(".guest-row");
         guestRows.forEach((row) => {
@@ -2225,13 +2253,11 @@
             doc.addPage();
             y = 20;
           }
-
           const name = row.dataset.name;
           const side = row.dataset.side;
           const rsvp = row.dataset.rsvp;
           const invitation = row.dataset.invitation;
           const saveTheDate = row.dataset.savethedate;
-
           doc.text(name, 20, y);
           doc.text(side, 80, y);
           doc.text(rsvp, 110, y);
@@ -2239,25 +2265,20 @@
           doc.text(saveTheDate, 170, y);
           y += 5;
         });
-
         y += 10;
-
         // Add unassigned guests
         const unassigned = Array.from(
           guestList.querySelectorAll(".guest-item")
         );
-
         if (unassigned.length > 0) {
           if (y > 250) {
             doc.addPage();
             y = 20;
           }
-
           doc.setFont("Playfair Display", "normal");
           doc.setFontSize(16);
           doc.text("Unassigned Guests", 20, y);
           y += 8;
-
           doc.setFont("Poppins", "normal");
           doc.setFontSize(12);
           unassigned.forEach((item) => {
@@ -2265,7 +2286,6 @@
               doc.addPage();
               y = 20;
             }
-
             doc.text(
               `- ${item.dataset.name} (${item.dataset.side}, ${item.dataset.rsvp})`,
               25,
@@ -2275,13 +2295,11 @@
           });
           y += 10;
         }
-
         if (tables.length === 0) {
           if (y > 250) {
             doc.addPage();
             y = 20;
           }
-
           doc.setFontSize(14);
           doc.text("No tables created yet.", 105, y, { align: "center" });
         } else {
@@ -2290,26 +2308,21 @@
               doc.addPage();
               y = 20;
             }
-
             const tableName = table.querySelector("h3").textContent;
             const guests = table.querySelectorAll("li");
-
             doc.setFont("Playfair Display", "normal");
             doc.setFontSize(16);
             doc.text(tableName, 20, y);
             y += 8;
-
             doc.setFont("Poppins", "normal");
             doc.setFontSize(12);
             doc.text(`Guests: ${guests.length}`, 20, y);
             y += 8;
-
             guests.forEach((g) => {
               if (y > 270) {
                 doc.addPage();
                 y = 20;
               }
-
               doc.text(
                 `- ${g.dataset.fullname} (${g.dataset.side}, ${g.dataset.rsvp})`,
                 25,
@@ -2320,70 +2333,57 @@
             y += 10;
           });
         }
-
         doc.save("Wedding-Seating-Chart.pdf");
         showNotification("Seating chart exported successfully");
       });
-
       // Generate Place Cards
       generatePlaceCardsBtn.addEventListener("click", () => {
         const { jsPDF } = window.jspdf;
         const doc = new jsPDF();
-
         // Set up page dimensions
         const pageWidth = doc.internal.pageSize.width;
         const pageHeight = doc.internal.pageSize.height;
-
         // Place card dimensions
         const cardWidth = 90;
         const cardHeight = 50;
         const margin = 15;
-
         // Track position
         let x = margin;
         let y = margin;
         let cardCount = 0;
-
         // Add title
         doc.setFont("Playfair Display", "normal");
         doc.setFontSize(18);
         doc.text("Wedding Place Cards", pageWidth / 2, 10, { align: "center" });
-
         // Generate place cards for all seated guests
         tables.forEach((table) => {
           const tableName = table.querySelector("h3").textContent;
           const guests = table.querySelectorAll("li");
-
           guests.forEach((guest) => {
             // Check if we need a new page
             if (y + cardHeight > pageHeight - margin) {
               doc.addPage();
               y = margin;
             }
-
             // Draw card border
             doc.setDrawColor(201, 168, 160);
             doc.setLineWidth(0.5);
             doc.rect(x, y, cardWidth, cardHeight);
-
             // Add guest name
             doc.setFont("Playfair Display", "normal");
             doc.setFontSize(14);
             doc.text(guest.dataset.fullname, x + cardWidth / 2, y + 20, {
               align: "center",
             });
-
             // Add table name
             doc.setFont("Poppins", "normal");
             doc.setFontSize(10);
             doc.text(`Table: ${tableName}`, x + cardWidth / 2, y + 35, {
               align: "center",
             });
-
             // Update position
             x += cardWidth + margin;
             cardCount++;
-
             // Move to next row if needed
             if (x + cardWidth > pageWidth - margin) {
               x = margin;
@@ -2391,18 +2391,15 @@
             }
           });
         });
-
         if (cardCount === 0) {
           doc.setFontSize(14);
           doc.text("No seated guests found.", pageWidth / 2, pageHeight / 2, {
             align: "center",
           });
         }
-
         doc.save("Wedding-Place-Cards.pdf");
         showNotification("Place cards generated successfully");
       });
-
       // Reset all data
       resetAllBtn.addEventListener("click", () => {
         if (
@@ -2417,52 +2414,42 @@
             tablePositions: {},
           };
           saveData();
-
           // Clear guest list
           guestList.innerHTML = "";
           guestList.appendChild(emptyGuestList);
           emptyGuestList.style.display = "flex";
-
           // Clear guest table
           guestTableBody.innerHTML = "";
           guestTableBody.appendChild(emptyGuestRow);
           emptyGuestRow.style.display = "table-row";
-
           // Clear tables
           tablesContainer.innerHTML = "";
           tables = [];
           tablePositions = {};
           tablesContainer.appendChild(emptyTables);
           emptyTables.style.display = "flex";
-
           // Clear inputs
           guestNameInput.value = "";
           tableNameInput.value = "";
           searchGuestsInput.value = "";
-
           // Reset view to table view
           currentView = "table";
           tableViewBtn.classList.add("active");
           floorPlanViewBtn.classList.remove("active");
-
           showNotification("All data has been reset");
         }
       });
-
       // Trash area functionality
       trashArea.addEventListener("dragover", (e) => {
         e.preventDefault();
         trashArea.classList.add("active");
       });
-
       trashArea.addEventListener("dragleave", () => {
         trashArea.classList.remove("active");
       });
-
       trashArea.addEventListener("drop", (e) => {
         e.preventDefault();
         const data = JSON.parse(e.dataTransfer.getData("text/plain"));
-
         // Find and remove the guest
         const sourceElements = [
           ...document.querySelectorAll(".guest-item, .table-card ul li"),
@@ -2472,12 +2459,10 @@
             el.remove();
           }
         });
-
         // Remove from data model
         weddingData.guests = weddingData.guests.filter(
           (g) => g.name !== data.name
         );
-
         // Remove from tables
         weddingData.tables.forEach((table) => {
           if (table.guests) {
@@ -2485,14 +2470,12 @@
           }
         });
         saveData();
-
         // Also remove from guest table if exists
         const guestRow = guestTableBody.querySelector(
           `.guest-row[data-name="${data.name}"]`
         );
         if (guestRow) {
           guestRow.remove();
-
           // Show empty state if no guests
           if (
             guestTableBody.children.length === 1 &&
@@ -2501,49 +2484,40 @@
             emptyGuestRow.style.display = "table-row";
           }
         }
-
         updateGuestCount();
         trashArea.classList.remove("active");
         showNotification(`${data.name} has been removed`);
       });
-
       // View toggle functionality
       tableViewBtn.addEventListener("click", () => {
         if (currentView === "table") return;
-
         currentView = "table";
         tableViewBtn.classList.add("active");
         floorPlanViewBtn.classList.remove("active");
-
         // Restore tables container
         const rightPanel = document.querySelector(".right-panel .panel");
         const floorPlan = rightPanel.querySelector(".floor-plan");
-
         if (floorPlan) {
           rightPanel.replaceChild(tablesContainer, floorPlan);
+          // Rebuild the tables container from the data model
+          rebuildTablesContainer();
         }
-
         showNotification("Switched to table view");
       });
-
       floorPlanViewBtn.addEventListener("click", () => {
         if (currentView === "floorPlan") return;
-
         currentView = "floorPlan";
         floorPlanViewBtn.classList.add("active");
         tableViewBtn.classList.remove("active");
-
         // Create floor plan container
         const floorPlan = document.createElement("div");
         floorPlan.className = "floor-plan";
-
         // Add instructions
         const instructions = document.createElement("div");
         instructions.className = "floor-plan-instructions";
         instructions.innerHTML =
           '<i class="fas fa-info-circle"></i> Drag tables to reposition them';
         floorPlan.appendChild(instructions);
-
         // Add venue outline
         const venue = document.createElement("div");
         venue.style.position = "absolute";
@@ -2554,7 +2528,6 @@
         venue.style.border = "2px dashed #c9a8a0";
         venue.style.borderRadius = "10px";
         floorPlan.appendChild(venue);
-
         // Add stage area
         const stage = document.createElement("div");
         stage.style.position = "absolute";
@@ -2572,28 +2545,23 @@
         stage.style.fontWeight = "bold";
         stage.textContent = "Stage";
         venue.appendChild(stage);
-
         // Add tables to floor plan
         tables.forEach((table, index) => {
           const tableName = table.querySelector("h3").textContent;
           const guestCount = table.querySelector(".guest-count").textContent;
-
           // Get saved position or use default
           const position = tablePositions[tableName] || { top: 100, left: 50 };
-
           const tableElement = document.createElement("div");
           tableElement.className = "floor-plan-table";
           tableElement.style.position = "absolute";
           tableElement.style.top = `${position.top}px`;
           tableElement.style.left = `${position.left}px`;
           tableElement.dataset.tableName = tableName;
-
           // Add table content
           tableElement.innerHTML = `
             <div class="floor-plan-table-name">${tableName}</div>
             <div class="floor-plan-table-count">${guestCount}/12</div>
           `;
-
           // Add delete button
           const deleteBtn = document.createElement("button");
           deleteBtn.className = "floor-plan-delete-table";
@@ -2608,11 +2576,16 @@
                 weddingData.tables.splice(tableIndex, 1);
                 delete weddingData.tablePositions[tableName];
                 saveData();
-              }
 
+                // Renumber tables after deletion
+                renumberTables();
+              }
+              // Remove from tables array
+              tables = tables.filter(
+                (t) => t.querySelector("h3").textContent !== tableName
+              );
               tableElement.remove();
               showNotification(`Table "${tableName}" deleted`);
-
               // Show empty state if no tables
               if (document.querySelectorAll(".floor-plan-table").length === 0) {
                 const emptyState = document.createElement("div");
@@ -2630,46 +2603,35 @@
             }
           });
           tableElement.appendChild(deleteBtn);
-
           // Make table draggable
           let isDragging = false;
           let startX, startY, initialLeft, initialTop;
-
           tableElement.addEventListener("mousedown", (e) => {
             // Don't start dragging if clicking on delete button
             if (e.target.closest(".floor-plan-delete-table")) return;
-
             isDragging = true;
             tableElement.classList.add("dragging");
-
             startX = e.clientX;
             startY = e.clientY;
             initialLeft = parseInt(tableElement.style.left);
             initialTop = parseInt(tableElement.style.top);
-
             e.preventDefault();
           });
-
           document.addEventListener("mousemove", (e) => {
             if (!isDragging) return;
-
             const dx = e.clientX - startX;
             const dy = e.clientY - startY;
-
             let newLeft = initialLeft + dx;
             let newTop = initialTop + dy;
-
             // Boundary constraints
             const venueRect = venue.getBoundingClientRect();
             const tableRect = tableElement.getBoundingClientRect();
             const floorPlanRect = floorPlan.getBoundingClientRect();
-
             // Convert to relative position
             const venueLeft = venueRect.left - floorPlanRect.left;
             const venueTop = venueRect.top - floorPlanRect.top;
             const venueRight = venueLeft + venueRect.width;
             const venueBottom = venueTop + venueRect.height;
-
             // Keep table within venue boundaries
             newLeft = Math.max(
               venueLeft,
@@ -2679,16 +2641,13 @@
               venueTop,
               Math.min(newTop, venueBottom - tableRect.height)
             );
-
             tableElement.style.left = `${newLeft}px`;
             tableElement.style.top = `${newTop}px`;
           });
-
           document.addEventListener("mouseup", () => {
             if (isDragging) {
               isDragging = false;
               tableElement.classList.remove("dragging");
-
               // Save the new position
               tablePositions[tableName] = {
                 left: parseInt(tableElement.style.left),
@@ -2698,19 +2657,15 @@
               saveData();
             }
           });
-
           venue.appendChild(tableElement);
         });
-
         // Replace tables container with floor plan
         const rightPanel = document.querySelector(".right-panel .panel");
         rightPanel.replaceChild(floorPlan, tablesContainer);
-
         showNotification(
           "Switched to floor plan view. Drag tables to reposition them."
         );
       });
-
       // Initialize empty states
       emptyGuestList.style.display = "flex";
       emptyGuestRow.style.display = "table-row";
